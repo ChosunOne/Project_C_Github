@@ -1,29 +1,37 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
     <meta charset="utf-8" />
-    <title>Project_C</title>
+    <title>Project C</title>
+  </head>
 
-    <!-- Project_C references -->
-    <script src="js/projC.js"></script>
-    <script src="lib/cuon-matrix-mod.js"></script>
-    <script src="lib/cuon-utils.js"></script>
-    <script src="lib/webgl-debug.js"></script>
-    <script src="lib/webgl-utils.js"></script>
-
-</head>
-<body onload="main()" onresize="main()">
-    <canvas id="webgl" width="400" height="400">
-        Please use a browser that supports HTML5
+  <body onload="main()" onresize="main()">
+    <canvas id="webgl" width="600" height="600">
+    Please use a browser that supports "canvas"
     </canvas>
-    <p><b>Camera Controls</b></p>
-    <p>
-        To move the camera forward, hit w.  To move the camera backward, hit s. To move the camera left, hit a.  To move
-        the camera right, hit d.  To move the camera up, hit space.  To move the camera down, hit ctrl.  To turn the camera
-        right, hit the right arrow key. To turn the camera left, hit the left arrow key.  To look up, hit the up arrow key.
-        To look down, hit the down arrow key.  To switch from perspective to orthographic camera, hit enter.
-    </p>
-    <p><b>Simulation Controls</b></p>
-    <p>To increase the angle of turn on the jello tower, hit f.  To decrease the angle of turn on the jello tower, hit g.</p>
-</body>
+    <button type="button" onclick="moveLampX()">
+        +Lamp X
+    </button>
+    <button type="button" onclick="moveLampXN()">
+        -Lamp X
+    </button>
+    <button type="button" onclick="moveLampY()">
+        +Lamp Y
+    </button>
+    <button type="button" onclick="moveLampYN()">
+        -Lamp Y
+    </button>
+    <button type="button" onclick="moveLampZ()">
+        +Lamp Z
+    </button>
+    <button type="button" onclick="moveLampZN()">
+        -Lamp Z
+    </button>
+
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix.js"></script>
+    <script src="js/projeC.js"></script>
+  </body>
 </html>

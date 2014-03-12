@@ -580,7 +580,7 @@ function drawPyramid(myGL, myu_ViewMatrix, myViewMatrix, levels, startingSize, s
     for (i = 0; i < levels; i++) {
         myGL.drawArrays(myGL.LINES, 6, 6);
         drawScaledCube(myGL, myu_ViewMatrix, pyraVM, startingSize, 1, startingSize, vertStart, vertEnd);
-        pyraVM.translate(0.0, 1.81, -0.8);
+        pyraVM.translate(0.0, -2.0, 0.0);
         pyraVM.rotate(rot, 1.0, 0.0, 0.0);
         pyraVM.scale(.8, .8, .8);
     }
